@@ -1,0 +1,64 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import com.jfoenix.controls.JFXButton?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TableColumn?>-->
+<!--<?import javafx.scene.control.TableView?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+
+<!--<AnchorPane fx:id="root" prefHeight="726.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">-->
+<!--   <children>-->
+<!--      <Label layoutX="179.0" layoutY="41.0" text="Manage Customer">-->
+<!--         <font>-->
+<!--            <Font size="26.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="51.0" layoutY="288.0" text="Contact Details">-->
+<!--         <font>-->
+<!--            <Font size="26.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="50.0" layoutY="220.0" text="Customer Address">-->
+<!--         <font>-->
+<!--            <Font size="26.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="50.0" layoutY="161.0" text="Customer Name">-->
+<!--         <font>-->
+<!--            <Font size="26.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="50.0" layoutY="102.0" text="Customer Id">-->
+<!--         <font>-->
+<!--            <Font size="26.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <TextField fx:id="txtId" layoutX="290.0" layoutY="106.0" />-->
+<!--      <TextField fx:id="txtName" layoutX="300.0" layoutY="165.0" />-->
+<!--      <TextField fx:id="txtAddress" layoutX="310.0" layoutY="224.0" />-->
+<!--      <TextField fx:id="txtContact" layoutX="300.0" layoutY="304.0" />-->
+<!--      <ImageView fx:id="imgHome" fitHeight="59.0" fitWidth="107.0" layoutX="51.0" layoutY="43.0">-->
+<!--         <image>-->
+<!--            <Image url="@../../../../../../../../Desktop/pictures/pic/home.jpeg" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+<!--      <TableView fx:id="tblCustomers" layoutX="110.0" layoutY="446.0" prefHeight="200.0" prefWidth="377.0">-->
+<!--         <columns>-->
+<!--            <TableColumn fx:id="colId" prefWidth="75.0" text="CustomerId" />-->
+<!--            <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />-->
+<!--            <TableColumn fx:id="colAddress" prefWidth="75.0" text="Address" />-->
+<!--            <TableColumn fx:id="colContact" prefWidth="75.0" text="Contact" />-->
+<!--            <TableColumn fx:id="colStatus" prefWidth="75.0" text="Status" />-->
+<!--         </columns>-->
+<!--      </TableView>-->
+<!--      <JFXButton fx:id="btnSave" layoutX="192.0" layoutY="387.0" onAction="#btnSave_OnAction" text="Save" />-->
+<!--      <JFXButton fx:id="btnNext" layoutX="487.0" layoutY="666.0" onAction="#btnNext_OnAction" text="Next&gt;&gt;" />-->
+<!--      <JFXButton fx:id="btnAddNew" layoutX="487.0" layoutY="57.0" onAction="#btnAddNew_OnAction" text="AddNew" />-->
+<!--      <JFXButton fx:id="btnDelete" layoutX="325.0" layoutY="387.0" onAction="#btnDelete_OnAction" text="Delete" />-->
+<!--   </children>-->
+<!--</AnchorPane>-->

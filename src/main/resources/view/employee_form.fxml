@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="801.0" prefWidth="963.0" stylesheets="@../style/newEmp_form.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.EmployeeFormController">
+   <children>
+      <Label layoutX="361.0" layoutY="53.0" text="Manage Employee">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEmp" layoutX="110.0" layoutY="446.0" prefHeight="254.0" prefWidth="709.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="143.0" text="CustomerId" />
+            <TableColumn fx:id="colName" prefWidth="116.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="155.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="colStatus" prefWidth="144.0" text="Status" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="343.0" layoutY="401.0" onAction="#btnSave_OnAction" prefHeight="24.0" prefWidth="107.0" text="Save">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+<!--      <JFXButton fx:id="btnNext" layoutX="487.0" layoutY="666.0" onAction="#btnNext_OnAction" text="Next&gt;&gt;" />-->
+      <JFXButton fx:id="btnAddNew" layoutX="656.0" layoutY="85.0" onAction="#btnAddNew_OnAction" text="+AddNew">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="549.0" layoutY="401.0" onAction="#btnDelete_OnAction" prefHeight="24.0" prefWidth="107.0" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtId" layoutX="97.0" layoutY="120.0" prefHeight="40.0" prefWidth="748.0" promptText="Employee Id" text="Employee Id">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="97.0" layoutY="192.0" onKeyReleased="#txtEmployeeNameOnKeyReleased" prefHeight="40.0" prefWidth="748.0" promptText="Employee Name" text="Employee Name">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtContact" layoutX="93.0" layoutY="264.0" onKeyReleased="#txtEmployeeContactOnKeyReleased" prefHeight="40.0" prefWidth="748.0" promptText="Contact Details" text="Contact Details">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="93.0" layoutY="337.0" prefHeight="40.0" prefWidth="748.0" promptText="Employee Address" text="Employee Address">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnNext" layoutX="782.0" layoutY="723.0" onAction="#btnNext_OnAction" text="Next &gt;&gt;">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="892.0" layoutY="84.0">
+         <image>
+            <Image url="@../Icon/free-search-icon-2911-thumb.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearch" layoutX="758.0" layoutY="84.0" onAction="#txtSearch_OnAction" opacity="0.8" prefHeight="31.0" prefWidth="167.0" promptText="Search" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="801.0" prefWidth="963.0" style="-fx-background-color: white;" stylesheets="@../style/newSupplier_form.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SupplierFormController">
+   <children>
+      <JFXButton fx:id="btn_Delete" layoutX="529.0" layoutY="457.0" onAction="#btnDelete_OnAction" prefHeight="30.0" prefWidth="98.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btn_Save" layoutX="377.0" layoutY="457.0" onAction="#btnSave_OnAction" prefHeight="30.0" prefWidth="79.0" text="save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtName" layoutX="122.0" layoutY="200.0" onKeyReleased="#txtSupplierNameOnKeyReleased" prefHeight="41.0" prefWidth="710.0" promptText="Supplier Name:" text="Supplier Name:" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtAddress" layoutX="122.0" layoutY="262.0" prefHeight="41.0" prefWidth="710.0" promptText="Supplier Address:" text="Supplier Address:" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtContact" layoutX="122.0" layoutY="327.0" onKeyReleased="#txtSupplierContactOnKeyReleased" prefHeight="41.0" prefWidth="710.0" promptText="Contact" text="Contact" unFocusColor="#4a3d3d" />
+      <JFXTextField fx:id="txtDescription" focusColor="#52659e" layoutX="122.0" layoutY="391.0" prefHeight="41.0" prefWidth="710.0" promptText="Description" text="Description" unFocusColor="#5e5757" />
+      <TableView fx:id="tableSupplier" layoutX="115.0" layoutY="505.0" prefHeight="227.0" prefWidth="725.0">
+         <columns>
+            <TableColumn prefWidth="96.0" text="id" />
+            <TableColumn prefWidth="131.0" text="name" />
+            <TableColumn prefWidth="135.0" text="address" />
+            <TableColumn prefWidth="134.0" text="contact" />
+            <TableColumn prefWidth="128.0" text="desc" />
+            <TableColumn prefWidth="100.0" text="status" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="748.0" layoutY="115.0" onAction="#txtSearch_OnAction" prefHeight="24.0" prefWidth="156.0" promptText="Search" />
+      <JFXButton fx:id="btn_AddNew" layoutX="627.0" layoutY="112.0" onAction="#btnAddNew_OnAction" prefHeight="30.0" prefWidth="109.0" text="+AddNew">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <Label layoutX="355.0" layoutY="59.0" text="Manage Suppliers">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_Next" layoutX="850.0" layoutY="742.0" onAction="#btnNext_OnAction" prefHeight="30.0" prefWidth="79.0" text="next &gt;&gt;" />
+      <JFXTextField fx:id="txtId" layoutX="122.0" layoutY="142.0" prefHeight="41.0" prefWidth="710.0" promptText="Supplier ID:" text="Supplier ID:" unFocusColor="BLACK" />
+      <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="874.0" layoutY="115.0">
+         <image>
+            <Image url="@../Icon/free-search-icon-2911-thumb.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

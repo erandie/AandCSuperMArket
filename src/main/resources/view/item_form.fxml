@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="801.0" prefWidth="963.0" stylesheets="@../style/newItem_form.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
+   <children>
+      <JFXButton fx:id="btnDelete" layoutX="557.0" layoutY="377.0" onAction="#btnDelete_OnAction" prefHeight="29.0" prefWidth="97.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="373.0" layoutY="377.0" onAction="#btnSave_OnAction" prefHeight="29.0" prefWidth="97.0" text="Save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnNext" layoutX="811.0" layoutY="738.0" onAction="#btnNext_OnAction" text="Next-&gt;&gt;" />
+      <TableView fx:id="tblItems" layoutX="128.0" layoutY="427.0" prefHeight="281.0" prefWidth="708.0">
+         <columns>
+            <TableColumn prefWidth="121.0" text="ItemId" />
+            <TableColumn prefWidth="151.0" text="Description" />
+            <TableColumn prefWidth="141.0" text="unitPrice" />
+            <TableColumn prefWidth="138.0" text="QtyOnHand" />
+            <TableColumn prefWidth="156.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="306.0" layoutY="43.0" text="Item Form Controller">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddNewItem" layoutX="707.0" layoutY="78.0" onAction="#btnAdd_OnAction" text="+AddNew">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtCode" layoutX="133.0" layoutY="126.0" prefHeight="36.0" prefWidth="716.0" promptText="Item Id" text="Item Id">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDescription" layoutX="132.0" layoutY="185.0" prefHeight="36.0" prefWidth="716.0" promptText="Description" text="Description">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUnitPrice" layoutX="132.0" layoutY="243.0" prefHeight="36.0" prefWidth="716.0" promptText="Unit Price" text="Unit Price">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="132.0" layoutY="305.0" prefHeight="36.0" prefWidth="716.0" promptText="Qty.On Hand" text="Qty.On Hand">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <TextField fx:id="txtSearch" layoutX="806.0" layoutY="78.0" onAction="#txtSearch_OnAction" prefHeight="24.0" prefWidth="136.0" promptText="Search" />
+      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="914.0" layoutY="78.0">
+         <image>
+            <Image url="@../Icon/free-search-icon-2911-thumb.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

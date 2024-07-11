@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="rootNode" prefHeight="541.0" prefWidth="840.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane layoutX="402.0" layoutY="42.0" opacity="0.2" prefHeight="458.0" prefWidth="399.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXTextField fx:id="txtUserId" layoutX="85.0" layoutY="114.0" prefHeight="41.0" prefWidth="244.0" />
+                  <JFXPasswordField fx:id="txtPassword" layoutX="85.0" layoutY="200.0" prefHeight="41.0" prefWidth="244.0" />
+                  <Label layoutX="144.0" layoutY="37.0" prefHeight="41.0" prefWidth="113.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnRegistrationOnAction" layoutX="486.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnRegistrationOnAction" opacity="0.97" prefHeight="48.0" prefWidth="124.0" text="Sign in">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnLoginOnAction" layoutX="621.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnLoginOnAction" opacity="0.98" prefHeight="48.0" prefWidth="124.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Text fill="WHITE" layoutX="320.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name" wrappingWidth="137.0673828125">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="327.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="124.0673828125">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="90.0" layoutY="106.0" stroke="#0d0d0d" strokeType="OUTSIDE" strokeWidth="0.0" text="You never get a second chance to make a great first impression." wrappingWidth="224.7294921875">
+               <font>
+                  <Font name="Abyssinica SIL" size="41.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="661.0" layoutY="473.0" prefHeight="22.0" prefWidth="105.0" text="Privacy Policy" textFill="#0d5e90f0" underline="true" />
+            <Hyperlink layoutX="531.0" layoutY="473.0" prefHeight="22.0" prefWidth="124.0" text="Terms of service " textFill="#0d5e90f0" underline="true" />
+            <Text layoutX="639.0" layoutY="489.0" stroke="#0d0d0d" strokeType="OUTSIDE" strokeWidth="0.0" text="  &amp;" wrappingWidth="20.7294921875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+<!--      <PasswordField fx:id="txtPassword" layoutX="180.0" layoutY="-82.0" prefHeight="48.0" prefWidth="277.0" promptText="Enter the password" />-->
+   </children>
+</AnchorPane>

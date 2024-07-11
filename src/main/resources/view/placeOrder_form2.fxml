@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="801.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.PlaceOrderFormController">
+   <children>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="59.0" layoutY="177.0" prefHeight="45.0" prefWidth="198.0" promptText="Customer Id" />
+      <JFXComboBox fx:id="cmnItrmId" layoutX="59.0" layoutY="240.0" prefHeight="45.0" prefWidth="198.0" promptText="Item Code" />
+      <TextField fx:id="txtQtyOnHand" layoutX="59.0" layoutY="312.0" prefHeight="45.0" prefWidth="198.0" text="Qty On Hand">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="302.0" layoutY="305.0" prefHeight="45.0" prefWidth="293.0" text="Unit Price" />
+      <TextField fx:id="txtItemDesc" layoutX="298.0" layoutY="240.0" prefHeight="45.0" prefWidth="300.0" text="Item Description" />
+      <TextField fx:id="txtCustomerName" layoutX="298.0" layoutY="177.0" prefHeight="45.0" prefWidth="300.0" text="Customer Name" />
+      <TableView fx:id="tblOrderDetails" layoutX="66.0" layoutY="404.0" prefHeight="261.0" prefWidth="805.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="100.0" text="code" />
+          <TableColumn fx:id="colDescription" prefWidth="205.0" text="description" />
+            <TableColumn fx:id="colQty" prefWidth="128.0" text="qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="124.0" text="unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="124.0" text="total" />
+            <TableColumn fx:id="colDelete" prefWidth="123.0" text="Delete" />
+        </columns>
+      </TableView>
+       <Label fx:id="lblId" alignment="CENTER_RIGHT" layoutX="722.0" layoutY="131.0" prefHeight="24.0" prefWidth="190.0" text="ORDER ID : OD001">
+           <font>
+               <Font name="System Bold" size="17.0" />
+           </font>
+       </Label>
+       <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="722.0" layoutY="172.0" prefHeight="24.0" prefWidth="152.0" text="2021-10-11">
+           <font>
+               <Font name="System Bold Italic" size="17.0" />
+           </font>
+       </Label>
+       <JFXButton fx:id="btnPlacepOrder" layoutX="725.0" layoutY="699.0" onAction="#btnPlaceOrder_OnAction" text="Place Order">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></JFXButton>
+      <Label fx:id="lblTotal" layoutX="54.0" layoutY="688.0" text="Total : 0.00">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+<!--      <Text fx:id="lblId" layoutX="488.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID:" />-->
+<!--      <Text fx:id="lblDate" layoutX="488.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021/02/25" />-->
+      <JFXButton fx:id="btbAdd" layoutX="615.0" layoutY="315.0" onAction="#btnAdd_OnAction" prefHeight="39.0" prefWidth="198.0" text="Add">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+      <Label layoutX="231.0" layoutY="58.0" prefHeight="47.0" prefWidth="476.0" text="Manage transactions">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="623.0" layoutY="248.0" prefHeight="45.0" prefWidth="198.0" text="Qty" />
+   </children>
+</AnchorPane>
